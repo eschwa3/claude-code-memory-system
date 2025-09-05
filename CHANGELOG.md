@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [2.0.0] - 2024-01-15
+## [2.0.0] - 2025-09-03
 
 ### Added
 - NORTH_STAR.md for sprint goal tracking
@@ -32,7 +32,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Timestamp update reliability
 - Git branch detection
 
-## [1.0.0] - 2024-01-01
+## [1.0.0] - 2025-08-15
 
 ### Added
 - Initial memory system
