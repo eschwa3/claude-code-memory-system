@@ -102,6 +102,14 @@ fi
 echo "📁 Creating complete directory structure..."
 mkdir -p .claude/{longterm,context,session,knowledge,workspace/{experiments,temp/$(date +%Y-%m-%d)},tools,automation/{hooks,scripts,templates},archive/$(date +%Y-%m)}
 
+# ================== RESTORE AGENTS FOLDER (IF EXISTS) ====================
+# Restore .claude/agents from backup if it exists
+if [ -d ".claude" ] && [ -n "$BACKUP_DIR" ] && [ -d "$BACKUP_DIR/agents" ]; then
+    echo "🤖 Restoring existing project agents..."
+    cp -r "$BACKUP_DIR/agents" .claude/
+    echo "✅ Project agents restored from backup"
+fi
+
 # ================== CREATE INDEX.md ====================
 cat > .claude/INDEX.md << 'EOFINDEX'
 # 🗂️ Claude Memory System Index
