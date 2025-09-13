@@ -1,25 +1,25 @@
-# 🧠 Claude Memory System
+# 🧠 Claude Code Memory System
 
 **Persistent memory for Claude Code** - Never lose context between coding sessions again.
 
-[![GitHub Actions](https://github.com/eschwa3/claude-memory-system/workflows/Test%20Installation/badge.svg)](https://github.com/eschwa3/claude-memory-system/actions)
+[![GitHub Actions](https://github.com/eschwa3/claude-code-memory-system/workflows/Test%20Installation/badge.svg)](https://github.com/eschwa3/claude-code-memory-system/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)](https://github.com/eschwa3/claude-memory-system/releases)
+[![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)](https://github.com/eschwa3/claude-code-memory-system/releases)
 
 ## 🚀 Quick Start
 
 ### One-Line Install
 ```bash
-curl -sSL https://raw.githubusercontent.com/eschwa3/claude-memory-system/main/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/eschwa3/claude-code-memory-system/main/install.sh | bash
 ```
 
 ### Verify Your System First (Optional)
 ```bash
-curl -sSL https://raw.githubusercontent.com/eschwa3/claude-memory-system/main/verify-install.sh | bash
+curl -sSL https://raw.githubusercontent.com/eschwa3/claude-code-memory-system/main/verify-install.sh | bash
 ```
 *This quick check ensures your system has all required tools before installation.*
 
-> **📋 NEXT STEP AFTER INSTALL**: You MUST use the setup prompts in [`Claude Memory Prompting Guide.md`](Claude%20Memory%20Prompting%20Guide.md) to properly initialize your project - this is critical for the memory system to work correctly!
+> **📋 NEXT STEP AFTER INSTALL**: You MUST use the setup prompts in [`Claude Code Memory Prompting Guide.md`](Claude%20Code%20Memory%20Prompting%20Guide.md) to properly initialize your project - this is critical for the memory system to work correctly!
 
 ### Alternative Install Methods
 <details>
@@ -28,27 +28,27 @@ curl -sSL https://raw.githubusercontent.com/eschwa3/claude-memory-system/main/ve
 **Download and Run:**
 ```bash
 # Using wget (Linux/macOS)
-wget https://raw.githubusercontent.com/eschwa3/claude-memory-system/main/install.sh
+wget https://raw.githubusercontent.com/eschwa3/claude-code-memory-system/main/install.sh
 chmod +x install.sh
 ./install.sh
 
 # Using curl (Linux/macOS/Windows Git Bash)
-curl -O https://raw.githubusercontent.com/eschwa3/claude-memory-system/main/install.sh
+curl -O https://raw.githubusercontent.com/eschwa3/claude-code-memory-system/main/install.sh
 chmod +x install.sh
 ./install.sh
 ```
 
 **Clone Repository:**
 ```bash
-git clone https://github.com/eschwa3/claude-memory-system.git
-cd claude-memory-system
+git clone https://github.com/eschwa3/claude-code-memory-system.git
+cd claude-code-memory-system
 ./install.sh
 ```
 </details>
 
 ## ✨ What This Does
 
-The Claude Memory System creates a persistent, organized memory structure that Claude Code can use to:
+The Claude Code Memory System creates a persistent, organized memory structure that Claude Code can use to:
 
 - 🧠 **Remember context** between coding sessions
 - 📊 **Track project goals** and maintain focus with longterm vision
@@ -98,12 +98,12 @@ Plus:
 ## 🎯 How It Works
 
 1. **Install once** in any project directory
-2. **Use the setup prompts** from [`Claude Memory Prompting Guide.md`](Claude%20Memory%20Prompting%20Guide.md)
+2. **Use the setup prompts** from [`Claude Code Memory Prompting Guide.md`](Claude%20Code%20Memory%20Prompting%20Guide.md)
 3. **Claude Code reads** the memory files automatically  
 4. **Context persists** across all coding sessions
 5. **Memory updates** automatically as you work
 
-> **⚠️ IMPORTANT**: After installation, you MUST use the prompts in [`Claude Memory Prompting Guide.md`](Claude%20Memory%20Prompting%20Guide.md) to properly initialize your project!
+> **⚠️ IMPORTANT**: After installation, you MUST use the prompts in [`Claude Code Memory Prompting Guide.md`](Claude%20Code%20Memory%20Prompting%20Guide.md) to properly initialize your project!
 
 ### Before vs After
 | Without Memory System | With Memory System |
@@ -119,18 +119,18 @@ Plus:
 ```bash
 mkdir my-new-project
 cd my-new-project
-curl -sSL https://raw.githubusercontent.com/eschwa3/claude-memory-system/main/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/eschwa3/claude-code-memory-system/main/install.sh | bash
 ```
 
 ### For Existing Projects
 ```bash
 cd existing-project
-curl -sSL https://raw.githubusercontent.com/eschwa3/claude-memory-system/main/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/eschwa3/claude-code-memory-system/main/install.sh | bash
 # The system will analyze your project automatically
 ```
 
 ### Daily Workflow
-1. **First time**: Use setup prompts from [`Claude Memory Prompting Guide.md`](Claude%20Memory%20Prompting%20Guide.md)
+1. **First time**: Use setup prompts from [`Claude Code Memory Prompting Guide.md`](Claude%20Code%20Memory%20Prompting%20Guide.md)
 2. **Start coding** - Claude Code reads `.claude/INDEX.md` first
 3. **Work normally** - Memory updates happen automatically
 4. **End session** - State is preserved for next time
@@ -161,7 +161,7 @@ The memory system reduces Claude Code token usage by **70-80%** through:
 .claude/automation/scripts/sync.sh
 
 # Update to latest version
-curl -sSL https://raw.githubusercontent.com/eschwa3/claude-memory-system/main/update.sh | bash
+curl -sSL https://raw.githubusercontent.com/eschwa3/claude-code-memory-system/main/update.sh | bash
 ```
 
 ## 🤝 Contributing
@@ -171,8 +171,8 @@ We welcome contributions! See [CONTRIBUTING.md](docs/CONTRIBUTING.md) for guidel
 **Quick contribution workflow:**
 ```bash
 # Fork the repo, then:
-git clone https://github.com/YOUR-USERNAME/claude-memory-system.git
-cd claude-memory-system
+git clone https://github.com/YOUR-USERNAME/claude-code-memory-system.git
+cd claude-code-memory-system
 # Make changes
 ./test/test-install.sh  # Test your changes
 # Submit PR
@@ -181,8 +181,8 @@ cd claude-memory-system
 ## 📚 Documentation
 
 ### 🚨 Essential Setup (Start Here!)
-- **[Claude Memory Prompting Guide](Claude%20Memory%20Prompting%20Guide.md)** - **REQUIRED POST-INSTALL PROMPTS** and post-installation Claude.md cleanup
-- **[Claude Memory Audit Prompts](Claude%20Memory%20Audit%20Prompts.md)** - Memory maintenance and optimization prompts
+- **[Claude Code Memory Prompting Guide](Claude%20Code%20Memory%20Prompting%20Guide.md)** - **REQUIRED POST-INSTALL PROMPTS** and post-installation Claude.md cleanup
+- **[Claude Code Memory Audit Prompts](Claude%20Code%20Memory%20Audit%20Prompts.md)** - Memory maintenance and optimization prompts
 
 ### Complete Documentation  
 - **[Getting Started Guide](GETTING_STARTED.md)** - Step-by-step setup walkthrough
@@ -207,9 +207,9 @@ cd claude-memory-system
 
 ## 🆘 Support
 
-**Issues?** Check our [FAQ](docs/FAQ.md) or [open an issue](https://github.com/eschwa3/claude-memory-system/issues).
+**Issues?** Check our [FAQ](docs/FAQ.md) or [open an issue](https://github.com/eschwa3/claude-code-memory-system/issues).
 
-**Questions?** Start a [discussion](https://github.com/eschwa3/claude-memory-system/discussions).
+**Questions?** Start a [discussion](https://github.com/eschwa3/claude-code-memory-system/discussions).
 
 ---
 

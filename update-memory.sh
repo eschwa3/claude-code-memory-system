@@ -1,10 +1,10 @@
 #!/bin/bash
-# Claude Memory System Update Script v2.0
+# Claude Code Memory System Update Script v2.0
 # Updates existing installations to current version
 
 set -e
 
-echo "🔄 Claude Memory System Update Utility"
+echo "🔄 Claude Code Memory System Update Utility"
 echo "====================================="
 
 # Detect OS
@@ -30,13 +30,13 @@ safe_sed() {
     fi
 }
 
-# Check if Claude Memory is installed
+# Check if Claude Code Code Memory is installed
 if [ ! -d ".claude" ]; then
     echo "❌ No .claude directory found. Please run install.sh first."
     exit 1
 fi
 
-echo "📍 Detected existing Claude Memory installation"
+echo "📍 Detected existing Claude Code Memory installation"
 
 # Create backup
 TIMESTAMP=$(date +%Y%m%d-%H%M%S)
@@ -217,9 +217,9 @@ echo "🔧 UPDATING .GITIGNORE"
 echo "===================="
 
 if [ -f ".gitignore" ]; then
-    if ! grep -q "Claude Memory System" .gitignore; then
+    if ! grep -q "Claude Code Memory System" .gitignore; then
         echo "" >> .gitignore
-        echo "# Claude Memory System" >> .gitignore
+        echo "# Claude Code Memory System" >> .gitignore
         echo ".claude/workspace/temp/" >> .gitignore
         echo ".claude/archive/" >> .gitignore
         echo "*.bak" >> .gitignore
@@ -300,7 +300,7 @@ fi
 
 echo ""
 echo "================================================"
-echo "✅ CLAUDE MEMORY SYSTEM UPDATE COMPLETE!"
+echo "✅ CLAUDE CODE MEMORY SYSTEM UPDATE COMPLETE!"
 echo "================================================"
 echo ""
 echo "📋 WHAT WAS UPDATED:"
@@ -321,7 +321,7 @@ echo "3. Update longterm/ files with project-specific content"
 echo "4. Test the memory system with Claude"
 echo ""
 echo "📚 FOR HELP:"
-echo "• See Claude Memory Audit Prompts.md for content quality checks"
-echo "• Use Claude Memory Prompting Guide.md for usage patterns"
+echo "• See Claude Code Memory Audit Prompts.md for content quality checks"
+echo "• Use Claude Code Memory Prompting Guide.md for usage patterns"
 echo ""
 echo "Update completed: $(date)"

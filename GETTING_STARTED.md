@@ -7,7 +7,7 @@ This guide will get you up and running with the Claude Code Memory System in und
 Before installing, you can check if your system has all required tools:
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/eschwa3/claude-memory-system/main/verify-install.sh | bash
+curl -sSL https://raw.githubusercontent.com/eschwa3/claude-code-memory-system/main/verify-install.sh | bash
 ```
 
 This will check for:
@@ -19,13 +19,13 @@ This will check for:
 
 ### Option A: One-Line Install (Recommended)
 ```bash
-curl -sSL https://raw.githubusercontent.com/eschwa3/claude-memory-system/main/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/eschwa3/claude-code-memory-system/main/install.sh | bash
 ```
 
 ### Option B: Manual Install
 ```bash
 # Download the installer
-curl -O https://raw.githubusercontent.com/eschwa3/claude-memory-system/main/install.sh
+curl -O https://raw.githubusercontent.com/eschwa3/claude-code-memory-system/main/install.sh
 
 # Make it executable
 chmod +x install.sh
@@ -132,13 +132,13 @@ Memory is automatically updated through git hooks, but you can manually sync:
 .claude/automation/scripts/prune.sh
 
 # Update to latest version
-curl -sSL https://raw.githubusercontent.com/eschwa3/claude-memory-system/main/update.sh | bash
+curl -sSL https://raw.githubusercontent.com/eschwa3/claude-code-memory-system/main/update.sh | bash
 ```
 
 ### Memory Maintenance Best Practices
 - **Audit regularly**: Run `./audit-memory.sh` weekly or after major development phases
 - **Update features**: Use `./update-memory.sh` to get latest longterm memory enhancements
-- **Clean Claude.md**: Use the cleanup prompt from [`Claude Code Memory Prompting Guide.md`](Claude%20Code%20Memory%20Prompting%20Guide.md) after initial setup
+- **Clean Claude.md**: Use the cleanup prompt from [`Claude Code Code Memory Prompting Guide.md`](Claude%20Code%20Memory%20Prompting%20Guide.md) after initial setup
 
 ## Understanding the Memory Structure
 
@@ -193,12 +193,12 @@ curl -sSL https://raw.githubusercontent.com/eschwa3/claude-memory-system/main/up
 ## Need Help?
 
 - **Setup Prompts**: [Claude Code Memory Prompting Guide.md](Claude%20Code%20Memory%20Prompting%20Guide.md) - Essential for proper initialization
-- **Memory Maintenance**: [Claude Memory Audit Prompts.md](Claude%20Memory%20Audit%20Prompts.md) - Keep your system optimized
+- **Memory Maintenance**: [Claude Code Memory Audit Prompts.md](Claude%20Code%20Memory%20Audit%20Prompts.md) - Keep your system optimized
 - **Documentation**: [README.md](README.md) and [docs/](docs/)
 - **Common Issues**: [FAQ](docs/FAQ.md)
-- **Report Bugs**: [GitHub Issues](https://github.com/eschwa3/claude-memory-system/issues)
-- **Ask Questions**: [GitHub Discussions](https://github.com/eschwa3/claude-memory-system/discussions)
+- **Report Bugs**: [GitHub Issues](https://github.com/eschwa3/claude-code-memory-system/issues)
+- **Ask Questions**: [GitHub Discussions](https://github.com/eschwa3/claude-code-memory-system/discussions)
 
 ---
 
-**🎉 You're all set! The Claude Memory System will now maintain context across all your coding sessions.**
+**🎉 You're all set! The Claude Code Memory System will now maintain context across all your coding sessions.**
