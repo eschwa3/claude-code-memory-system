@@ -1,5 +1,5 @@
 #!/bin/bash
-# Claude Memory System Audit Script v2.0
+# Claude Code Memory System Audit Script v2.0
 # Comprehensive health check for existing installations
 
 set -e
@@ -26,7 +26,7 @@ WARNINGS=0
 ERRORS=0
 SCORE=0
 
-echo "🔍 Claude Memory System Audit"
+echo "🔍 Claude Code Memory System Audit"
 echo "============================="
 
 # Helper functions
@@ -59,7 +59,7 @@ echo "=================="
 
 # Check if .claude directory exists
 if [ -d ".claude" ]; then
-    check_pass "Claude memory directory exists"
+    check_pass "Claude Code Memory directory exists"
 else
     check_fail "No .claude directory found - memory system not installed"
     exit 1
@@ -207,13 +207,13 @@ else
 fi
 
 # Check for git hooks
-if [ -f ".git/hooks/pre-commit" ] && grep -q "Claude Memory" .git/hooks/pre-commit 2>/dev/null; then
+if [ -f ".git/hooks/pre-commit" ] && grep -q "Claude Code Memory" .git/hooks/pre-commit 2>/dev/null; then
     check_pass "Git pre-commit hook installed"
 else
     check_warn "Git pre-commit hook missing or not configured"
 fi
 
-if [ -f ".git/hooks/post-commit" ] && grep -q "Claude Memory" .git/hooks/post-commit 2>/dev/null; then
+if [ -f ".git/hooks/post-commit" ] && grep -q "Claude Code Memory" .git/hooks/post-commit 2>/dev/null; then
     check_pass "Git post-commit hook installed"
 else
     check_warn "Git post-commit hook missing or not configured"
@@ -277,7 +277,7 @@ echo ""
 
 if [ $SCORE -ge 90 ]; then
     echo -e "${GREEN}🎉 HEALTH SCORE: $SCORE% - Excellent!${NC}"
-    echo "Your Claude Memory system is in great shape."
+    echo "Your Claude Code Memory system is in great shape."
 elif [ $SCORE -ge 75 ]; then
     echo -e "${YELLOW}📈 HEALTH SCORE: $SCORE% - Good${NC}"
     echo "Some minor improvements recommended."
@@ -320,6 +320,6 @@ fi
 
 echo ""
 echo "🤖 For deeper content analysis, use the Claude audit prompts:"
-echo "   See: Claude Memory Prompting Guide.md (search for 'audit')"
+echo "   See: Claude Code Memory Prompting Guide.md (search for 'audit')"
 echo ""
 echo "Audit complete! $(date)"

@@ -1,6 +1,6 @@
-# 🚀 Getting Started with Claude Memory System
+# 🚀 Getting Started with Claude Code Memory System
 
-This guide will get you up and running with the Claude Memory System in under 5 minutes.
+This guide will get you up and running with the Claude Code Memory System in under 5 minutes.
 
 ## Step 1: Verify Your System (Optional)
 
@@ -39,7 +39,7 @@ chmod +x install.sh
 After installation, you should see:
 
 ```
-✅ Claude Memory System v2.0 Installed!
+✅ Claude Code Memory System v2.0 Installed!
 
 📋 Next Steps:
 1. Edit .claude/NORTH_STAR.md with your current goal
@@ -55,17 +55,17 @@ cat .claude/INDEX.md
 
 ## Step 4: 🚨 CRITICAL - Use the Setup Prompts
 
-**This is the most important step!** The memory system needs to be properly initialized using the prompts in [`Claude Memory Prompting Guide.md`](Claude%20Memory%20Prompting%20Guide.md).
+**This is the most important step!** The memory system needs to be properly initialized using the prompts in [`Claude Code Memory Prompting Guide.md`](Claude%20Code%20Memory%20Prompting%20Guide.md).
 
 ### For New Projects:
-1. Open [`Claude Memory Prompting Guide.md`](Claude%20Memory%20Prompting%20Guide.md)
+1. Open [`Claude Code Memory Prompting Guide.md`](Claude%20Code%20Memory%20Prompting%20Guide.md)
 2. Copy the **"Complete Analysis and Setup Prompt for NEW Projects"** section
 3. Fill in your project requirements
 4. Paste the entire prompt to Claude Code
 5. **After analysis is complete**: Use the "Post-Installation Claude.md Cleanup Prompt" to optimize your `Claude.md`
 
 ### For Existing Projects:
-1. Open [`Claude Memory Prompting Guide.md`](Claude%20Memory%20Prompting%20Guide.md)
+1. Open [`Claude Code Memory Prompting Guide.md`](Claude%20Code%20Memory%20Prompting%20Guide.md)
 2. Copy the **"Complete Analysis and Setup Prompt for EXISTING Projects"** section
 3. Paste the entire prompt to Claude Code
 4. **After analysis is complete**: Use the "Post-Installation Claude.md Cleanup Prompt" to optimize your `Claude.md`
@@ -138,7 +138,7 @@ curl -sSL https://raw.githubusercontent.com/eschwa3/claude-memory-system/main/up
 ### Memory Maintenance Best Practices
 - **Audit regularly**: Run `./audit-memory.sh` weekly or after major development phases
 - **Update features**: Use `./update-memory.sh` to get latest longterm memory enhancements
-- **Clean Claude.md**: Use the cleanup prompt from [`Claude Memory Prompting Guide.md`](Claude%20Memory%20Prompting%20Guide.md) after initial setup
+- **Clean Claude.md**: Use the cleanup prompt from [`Claude Code Memory Prompting Guide.md`](Claude%20Code%20Memory%20Prompting%20Guide.md) after initial setup
 
 ## Understanding the Memory Structure
 
@@ -184,7 +184,7 @@ curl -sSL https://raw.githubusercontent.com/eschwa3/claude-memory-system/main/up
 - Manually sync: `.claude/automation/scripts/sync.sh`
 
 **Claude Code not reading memory?**
-- **Most common issue**: You didn't use the setup prompts in [`Claude Memory Prompting Guide.md`](Claude%20Memory%20Prompting%20Guide.md)
+- **Most common issue**: You didn't use the setup prompts in [`Claude Code Memory Prompting Guide.md`](Claude%20Code%20Memory%20Prompting%20Guide.md)
 - **Second most common**: `Claude.md` still contains first-session setup instructions instead of development workflow
 - Ensure `Claude.md` exists in project root and is optimized for ongoing development
 - Check that `.claude/INDEX.md` is properly formatted
@@ -192,7 +192,7 @@ curl -sSL https://raw.githubusercontent.com/eschwa3/claude-memory-system/main/up
 
 ## Need Help?
 
-- **Setup Prompts**: [Claude Memory Prompting Guide.md](Claude%20Memory%20Prompting%20Guide.md) - Essential for proper initialization
+- **Setup Prompts**: [Claude Code Memory Prompting Guide.md](Claude%20Code%20Memory%20Prompting%20Guide.md) - Essential for proper initialization
 - **Memory Maintenance**: [Claude Memory Audit Prompts.md](Claude%20Memory%20Audit%20Prompts.md) - Keep your system optimized
 - **Documentation**: [README.md](README.md) and [docs/](docs/)
 - **Common Issues**: [FAQ](docs/FAQ.md)

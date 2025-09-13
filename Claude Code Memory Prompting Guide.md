@@ -2,7 +2,7 @@
 
 ## 📋 Post-Installation Claude.md Cleanup Prompt
 
-After successfully installing the Claude Memory System and completing the initial analysis, use this prompt to optimize your Claude.md file for ongoing development:
+After successfully installing the Claude Code Memory System and completing the initial analysis, use this prompt to optimize your Claude.md file for ongoing development:
 
 ```markdown
 # Post-Installation Claude.md Cleanup
@@ -47,7 +47,7 @@ NOTE:  Make sure to fill in **PROJECT REQUIREMENTS:** section below with as much
 ---
 
 ```markdown
-I've installed the Claude Memory System in this project. Before starting development, you MUST complete a full discovery of what already exists and properly set up the project structure.
+I've installed the Claude Code Memory System in this project. Before starting development, you MUST complete a full discovery of what already exists and properly set up the project structure.
 
 ## 📋 MANDATORY DISCOVERY AND SETUP CHECKLIST
 
@@ -455,7 +455,7 @@ Copy and paste this entire prompt to Claude Code after installing the memory sys
 ---
 
 ```markdown
-I've installed the Claude Memory System in this existing project. You MUST complete a FULL analysis and populate EVERY memory file before doing any other work.
+I've installed the Claude Code Memory System in this existing project. You MUST complete a FULL analysis and populate EVERY memory file before doing any other work.
 
 ## 📋 MANDATORY ANALYSIS CHECKLIST
 
@@ -993,7 +993,7 @@ After initial setup, you can use simple prompts:
 ### Clean up Memory every so often
 After some time, you can use a simple clean up prompt:
 ```markdown
-" 🧠 Claude Memory Maintenance
+" 🧠 Claude Code Memory Maintenance
 
   Goal: Keep memory system clean, current, and token-efficient
 

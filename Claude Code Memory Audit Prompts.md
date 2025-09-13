@@ -1,4 +1,4 @@
-# Claude Memory System Audit Prompts
+# Claude Code Memory System Audit Prompts
 
 ## 📑 Table of Contents
 
@@ -59,7 +59,7 @@
 ```markdown
 # Memory System Health Check
 
-Please perform a comprehensive audit of this Claude Memory installation:
+Please perform a comprehensive audit of this Claude Code Memory installation:
 
 ## STEP 1: Structure Verification
 1. Check that all required .claude/ directories and files exist
@@ -192,7 +192,7 @@ Provide specific recommendations with file paths and line numbers where possible
 ```markdown
 # Memory System Version Audit
 
-Check compatibility with current Claude Memory System version:
+Check compatibility with current Claude Code Memory System version:
 
 ## STEP 1: Version Detection
 1. Check .claude/INDEX.md for strategic file descriptions:
