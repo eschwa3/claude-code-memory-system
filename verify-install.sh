@@ -1,10 +1,10 @@
 #!/bin/bash
-# Claude Memory System - Installation Verification
+# Claude Code Memory System - Installation Verification
 # Quick script to verify your system can run the installer
 
 set -e
 
-echo "🔍 Claude Memory System - Installation Verification"
+echo "🔍 Claude Code Memory System - Installation Verification"
 echo "================================================="
 
 # Colors for output (cross-platform compatible)
@@ -111,9 +111,9 @@ echo "🧪 Testing Basic Operations"
 echo "--------------------------"
 
 # Test file creation
-if touch test-claude-memory.tmp 2>/dev/null; then
+if touch test-claude-code-memory.tmp 2>/dev/null; then
     echo "${GREEN}✅${NC} File creation works"
-    rm -f test-claude-memory.tmp
+    rm -f test-claude-code-memory.tmp
 else
     echo "${RED}❌${NC} Cannot create files"
     ERRORS=$((ERRORS + 1))
@@ -133,10 +133,10 @@ echo "📊 Verification Summary"
 echo "====================="
 
 if [[ $ERRORS -eq 0 ]]; then
-    echo "${GREEN}🎉 All checks passed! Your system is ready for Claude Memory System.${NC}"
+    echo "${GREEN}🎉 All checks passed! Your system is ready for Claude Code Memory System.${NC}"
     echo ""
     echo "To install, run:"
-    echo "  ${GREEN}curl -sSL https://raw.githubusercontent.com/eschwa3/claude-memory-system/main/install.sh | bash${NC}"
+    echo "  ${GREEN}curl -sSL https://raw.githubusercontent.com/eschwa3/claude-code-memory-system/main/install.sh | bash${NC}"
     exit 0
 else
     echo "${RED}⚠️  Found $ERRORS issue(s). Please resolve before installing.${NC}"
@@ -147,6 +147,6 @@ else
     echo "• Run in a directory where you have write permissions"
     echo "• Update bash to version 4.0+ if possible"
     echo ""
-    echo "See: https://github.com/eschwa3/claude-memory-system/blob/main/docs/FAQ.md"
+    echo "See: https://github.com/eschwa3/claude-code-memory-system/blob/main/docs/FAQ.md"
     exit 1
 fi

@@ -1,12 +1,12 @@
 #!/bin/bash
-# Claude Memory System Installer v2.0 - Complete Cross-Platform Version
+# Claude Code Memory System Installer v2.0 - Complete Cross-Platform Version
 # Works on Unix, Linux, macOS, and Windows (Git Bash/WSL)
 
 set -e
 
 PROJECT_NAME=${1:-$(basename "$PWD")}
 
-echo "🚀 Installing Claude Memory System for: $PROJECT_NAME"
+echo "🚀 Installing Claude Code Memory System for: $PROJECT_NAME"
 echo "📍 Platform: $OSTYPE"
 echo "================================================"
 
@@ -112,7 +112,7 @@ fi
 
 # ================== CREATE INDEX.md ====================
 cat > .claude/INDEX.md << 'EOFINDEX'
-# 🗂️ Claude Memory System Index
+# 🗂️ Claude Code Memory System Index
 **Purpose**: Quick reference to locate information without reading multiple files
 **Last Updated**: TIMESTAMP_PLACEHOLDER
 
@@ -985,7 +985,7 @@ else
 **Focus**: New project initialization
 
 ## 🎯 Active Todo List
-- [x] Initialize Claude Memory System
+- [x] Initialize Claude Code Memory System
 - [ ] Set up project structure
 - [ ] Create initial files
 - [ ] Set up development environment
@@ -993,7 +993,7 @@ else
 
 ## 📍 Current Context
 ### What We're Building
-> Starting a new project with Claude Memory System
+> Starting a new project with Claude Code Memory System
 
 ### Files in Focus
 ```yaml
@@ -1045,7 +1045,7 @@ cat > .claude/session/log.md << 'EOFLOG'
 **Focus**: Initial Setup
 
 ### Accomplished
-- [x] Installed Claude Memory System
+- [x] Installed Claude Code Memory System
 - [x] Created directory structure
 - [x] Initialized memory files
 
@@ -1677,11 +1677,11 @@ EOFTOOLCACHE
 # ================== AUTOMATION SCRIPTS ====================
 cat > .claude/automation/scripts/validate.sh << 'EOFVALIDATESH'
 #!/bin/bash
-# Claude Memory System Validation
+# Claude Code Memory System Validation
 
 set -e
 
-echo "🔍 Claude Memory System Validation"
+echo "🔍 Claude Code Memory System Validation"
 echo "=================================="
 
 # Colors for output (work on all platforms)
@@ -1779,9 +1779,9 @@ EOFVALIDATESH
 
 cat > .claude/automation/scripts/prune.sh << 'EOFPRUNESH'
 #!/bin/bash
-# Claude Memory System Cleanup
+# Claude Code Memory System Cleanup
 
-echo "🧹 Claude Memory System Cleanup"
+echo "🧹 Claude Code Memory System Cleanup"
 echo "================================"
 
 # Create archive directory
@@ -1826,9 +1826,9 @@ EOFPRUNESH
 
 cat > .claude/automation/scripts/sync.sh << 'EOFSYNCH'
 #!/bin/bash
-# Claude Memory System Sync
+# Claude Code Memory System Sync
 
-echo "🔄 Syncing Claude Memory System"
+echo "🔄 Syncing Claude Code Memory System"
 echo "================================"
 
 # Detect OS
@@ -1880,7 +1880,7 @@ EOFSYNCH
 # ================== GIT HOOKS ====================
 cat > .claude/automation/hooks/pre-commit << 'EOFPRECOMMIT'
 #!/bin/bash
-# Git pre-commit hook for Claude Memory
+# Git pre-commit hook for Claude Code Memory
 
 # Don't commit temp files
 if git diff --cached --name-only | grep -q "\.claude/workspace/temp"; then
@@ -1897,7 +1897,7 @@ EOFPRECOMMIT
 
 cat > .claude/automation/hooks/post-commit << 'EOFPOSTCOMMIT'
 #!/bin/bash
-# Git post-commit hook for Claude Memory
+# Git post-commit hook for Claude Code Memory
 
 # Update session log with commit info
 COMMIT_MSG=$(git log -1 --pretty=%B)
@@ -2116,9 +2116,9 @@ fi
 echo "📝 Updating .gitignore..."
 if [ -f ".gitignore" ]; then
     # Check if already added
-    if ! grep -q "Claude Memory System" .gitignore; then
+    if ! grep -q "Claude Code Memory System" .gitignore; then
         echo "" >> .gitignore
-        echo "# Claude Memory System" >> .gitignore
+        echo "# Claude Code Memory System" >> .gitignore
         echo ".claude/workspace/temp/" >> .gitignore
         echo ".claude/archive/" >> .gitignore
         echo "*.bak" >> .gitignore
@@ -2127,7 +2127,7 @@ if [ -f ".gitignore" ]; then
 else
     # Create new .gitignore
     cat > .gitignore << 'EOFGITIGNORE'
-# Claude Memory System
+# Claude Code Memory System
 .claude/workspace/temp/
 .claude/archive/
 *.bak
@@ -2150,11 +2150,11 @@ bash .claude/automation/scripts/validate.sh
 
 echo ""
 echo "================================================"
-echo "✅ Claude Memory System v2.0 Installed!"
+echo "✅ Claude Code Memory System v2.0 Installed!"
 echo "🖥️  Platform: $OS"
 echo ""
 echo "📋 CRITICAL Next Steps:"
-echo "1. 🚨 FIRST: Use the setup prompts in 'Claude Memory Prompting Guide.md'"
+echo "1. 🚨 FIRST: Use the setup prompts in 'Claude Code Memory Prompting Guide.md'"
 echo "   - For NEW projects: Copy the 'NEW Projects' setup prompt"
 echo "   - For EXISTING projects: Copy the 'EXISTING Projects' setup prompt"
 echo "   - This step is REQUIRED for the memory system to work!"
