@@ -1,10 +1,10 @@
 
 #!/bin/bash
-# Test the Claude Memory System installation
+# Test the Claude Code Memory System installation
 
 set -e
 
-echo "🧪 Testing Claude Memory System Installation"
+echo "🧪 Testing Claude Code Memory System Installation"
 
 # Get the repository root directory (parent of test directory)
 REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"

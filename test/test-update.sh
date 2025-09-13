@@ -3,7 +3,7 @@
 
 set -e
 
-echo "🧪 Testing Claude Memory System Update"
+echo "🧪 Testing Claude Code Memory System Update"
 
 # Create temp directory
 TEST_DIR="test-update-$(date +%Y%m%d-%H%M%S)"
