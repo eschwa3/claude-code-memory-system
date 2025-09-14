@@ -98,12 +98,12 @@ Plus:
 ## 🎯 How It Works
 
 1. **Install once** in any project directory
-2. **Use the setup prompts** from [`Claude Code Memory Prompting Guide.md`](Claude%20Code%20Memory%20Prompting%20Guide.md)
+2. **Use the setup prompts** from [`Claude Code Memory Prompting Guide.md`](Claude_Code_Memory_Prompting_Guide.md)
 3. **Claude Code reads** the memory files automatically  
 4. **Context persists** across all coding sessions
 5. **Memory updates** automatically as you work
 
-> **⚠️ IMPORTANT**: After installation, you MUST use the prompts in [`Claude Code Memory Prompting Guide.md`](Claude%20Code%20Memory%20Prompting%20Guide.md) to properly initialize your project!
+> **⚠️ IMPORTANT**: After installation, you MUST use the prompts in [`Claude Code Memory Prompting Guide.md`](Claude_Code_Memory_Prompting_Guide.md) to properly initialize your project!
 
 ### Before vs After
 | Without Memory System | With Memory System |
@@ -130,7 +130,7 @@ curl -sSL https://raw.githubusercontent.com/eschwa3/claude-code-memory-system/ma
 ```
 
 ### Daily Workflow
-1. **First time**: Use setup prompts from [`Claude Code Memory Prompting Guide.md`](Claude%20Code%20Memory%20Prompting%20Guide.md)
+1. **First time**: Use setup prompts from [`Claude Code Memory Prompting Guide.md`](Claude_Code_Memory_Prompting_Guide.md)
 2. **Start coding** - Claude Code reads `.claude/INDEX.md` first
 3. **Work normally** - Memory updates happen automatically
 4. **End session** - State is preserved for next time
@@ -181,8 +181,8 @@ cd claude-code-memory-system
 ## 📚 Documentation
 
 ### 🚨 Essential Setup (Start Here!)
-- **[Claude Code Memory Prompting Guide](Claude%20Code%20Memory%20Prompting%20Guide.md)** - **REQUIRED POST-INSTALL PROMPTS** and post-installation Claude.md cleanup
-- **[Claude Code Memory Audit Prompts](Claude%20Code%20Memory%20Audit%20Prompts.md)** - Memory maintenance and optimization prompts
+- **[Claude Code Memory Prompting Guide](Claude_Code_Memory_Prompting_Guide.md)** - **REQUIRED POST-INSTALL PROMPTS** and post-installation Claude.md cleanup
+- **[Claude Code Memory Audit Prompts](Claude_Code_Memory_Audit_Prompts.md)** - Memory maintenance and optimization prompts
 
 ### Complete Documentation  
 - **[Getting Started Guide](GETTING_STARTED.md)** - Step-by-step setup walkthrough
