@@ -1,49 +1,82 @@
-# Claude Code Prompting Guide for Memory System
+# Claude Code Memory Prompting Guide v3
 
-## 📋 Post-Installation Claude.md Cleanup Prompt
-
-After successfully installing the Claude Code Memory System and completing the initial analysis, use this prompt to optimize your Claude.md file for ongoing development:
-
-```markdown
-# Post-Installation Claude.md Cleanup
-
-Now that the memory system is fully installed and analyzed, please clean up Claude.md to focus on ongoing development workflow instead of first-time setup.
-
-## CLEANUP INSTRUCTIONS
-
-1. **Remove first-session analysis requirements** - The mandatory analysis checklist is no longer needed
-2. **Remove memory population instructions** - All context files are now populated
-3. **Keep token optimization guidance** - INDEX.md navigation is still critical
-4. **Add streamlined development workflow** - Focus on daily usage patterns
-5. **Preserve essential project rules** - Keep core principles but remove setup-specific content
-
-## TARGET CLAUDE.MD STRUCTURE
-The optimized Claude.md should contain only:
-- Quick INDEX.md navigation reminder
-- Development workflow patterns  
-- Memory maintenance guidelines
-- Essential project-specific rules
-- Longterm memory integration notes
-
-## EXPECTED RESULT
-Reduce Claude.md from ~75 lines of setup instructions to ~25-30 lines of development-focused guidance that emphasizes:
-- Starting with INDEX.md for token efficiency
-- Regular memory updates during development
-- Integration with longterm vision files
-- Post-installation workflow patterns
-
-Please create this streamlined version now.
-```
+A comprehensive navigation guide for the Claude Code Memory Prompting Guide, organized by development workflow and user needs.
 
 ---
 
-# New Project Setup Prompt
+## 📋 Table of Contents
+
+### ✅ [1. First-Time Setup Checklist](#1-first-time-setup-checklist)
+
+*Step-by-step verification for successful memory system installation*
+
+### 📋 [2. Initial Setup Instructions for New Projects](#2-initial-setup-instructions-for-new-projects)
+
+*Complete setup workflow for starting fresh projects with the Claude Code Memory System*
+
+### 📂 [3. Initial Setup Instructions for Existing Projects](#3-initial-setup-instructions-for-existing-projects)
+
+*Comprehensive analysis workflow for integrating the memory system into established codebases*
+
+### 🧹 [4. Post-Installation Claude.md Cleanup](#4-post-installation-claudemd-cleanup)
+
+*Streamline your Claude.md file after successful memory system installation*
+
+### 🚀 [5. Power User Prompts](#5-power-user-prompts)
+
+*Advanced prompts for efficient development workflows and token optimization*
+
+### 📝 [6. Template Prompts for Common Scenarios](#6-template-prompts-for-common-scenarios)
+
+*Ready-to-use prompts for typical development tasks*
+
+### ⚠️ [7. Common Mistakes to Avoid](#7-common-mistakes-to-avoid)
+
+*Learn what NOT to do and the correct alternatives*
+
+### 💡 [8. Pro Tips](#8-pro-tips)
+
+*Expert techniques for maximizing the memory system's effectiveness*
+
+### 📊 [9. Expected Behavior](#9-expected-behavior)
+
+*Understanding how Claude should behave when properly using the memory system*
+
+### 🎬 [10. Example Full Session](#10-example-full-session)
+
+*A complete day in the life using the Claude Code Memory System*
+
+---
+
+## 1. First-Time Setup Checklist
+
+## 🚀 First-Time Setup Checklist
+
+### For New Projects:
+- [ ] Run installer: `claude-memory "ProjectName"`
+- [ ] Edit `.claude/NORTH_STAR.md` with your sprint goal
+- [ ] Give Claude the "Initial Setup Prompt" above
+- [ ] Let Claude populate the memory system
+- [ ] Run Post-Installation Claude.md Cleanup Prompt
+
+### For Existing Projects:
+- [ ] Run installer: `claude-memory "ProjectName"`
+- [ ] Give Claude the "Initial Analysis Prompt" above
+- [ ] Let Claude analyze thoroughly (this may take 5-10 minutes)
+- [ ] Review Claude's analysis and correct if needed
+- [ ] Run Post-Installation Claude.md Cleanup Prompt
+- [ ] Start regular development with "Resuming Work Prompt"
+
+---
+
+## 2. Initial Setup Instructions for New Projects
 
 ## 🆕 Complete Analysis and Setup Prompt for NEW Projects
 
 Copy and paste this entire prompt to Claude Code after installing the memory system in a new/empty project:
 
-NOTE:  Make sure to fill in **PROJECT REQUIREMENTS:** section below with as much detail as you can.
+**NOTE:** Make sure to fill in **PROJECT REQUIREMENTS:** section below with as much detail as you can.
+
 ---
 
 ```markdown
@@ -257,7 +290,7 @@ Plan the development roadmap:
 #### 💡 Strategic Context Files - Critical for Decision Making
 The `longterm/` directory contains your **strategic context** - Claude should consult these files whenever:
 - Planning features or sprints
-- Making architectural decisions  
+- Making architectural decisions
 - Defining user requirements
 - Prioritizing development work
 
@@ -422,7 +455,7 @@ Don't work on: [THINGS TO AVOID]
 #### Daily Work Session Prompt
 ```markdown
 Starting a new work session. Please:
-1. Read .claude/INDEX.md to navigate files efficiently  
+1. Read .claude/INDEX.md to navigate files efficiently
 2. Check .claude/NORTH_STAR.md for our current goal
 3. Read .claude/session/current.md to see where we left off
 4. Continue with the next todo items
@@ -442,19 +475,19 @@ Time to implement [FEATURE]. Please:
 
 ---
 
-## 📂 For EXISTING Projects
+## 3. Initial Setup Instructions for Existing Projects
 
 ### Initial Analysis Prompt (CRITICAL - First Time Only)
+
+When you have an existing project that needs the memory system populated, use this comprehensive analysis prompt. This is a **one-time setup** that will thoroughly analyze your codebase and populate all memory files with accurate, project-specific information.
+
+Copy and paste this entire prompt to Claude Code after installing the memory system in an existing project:
+
 ```markdown
 # Exhaustive Analysis Prompt for Existing Projects
 
 ## 🔴 MANDATORY COMPLETE ANALYSIS PROMPT
 
-Copy and paste this entire prompt to Claude Code after installing the memory system in an existing project:
-
----
-
-```markdown
 I've installed the Claude Code Memory System in this existing project. You MUST complete a FULL analysis and populate EVERY memory file before doing any other work.
 
 ## 📋 MANDATORY ANALYSIS CHECKLIST
@@ -715,7 +748,7 @@ After Claude completes this exhaustive analysis, you should have:
 
 ### 📈 **Metrics Claude Should Report**
 - Files analyzed: [number]
-- Lines of code reviewed: [number]  
+- Lines of code reviewed: [number]
 - Dependencies documented: [number]
 - Patterns identified: [number]
 - Issues found: [number]
@@ -749,16 +782,13 @@ Now that the analysis is complete, please:
 4. Confirm all memory files are populated
 ```
 
-This exhaustive prompt ensures Claude thoroughly analyzes and documents every aspect of your existing project!
-```
-
 ### After Initial Analysis - Regular Work Sessions
 
 #### Resuming Work Prompt
 ```markdown
 Continuing work on this project. Please:
 1. Read .claude/INDEX.md first for efficient navigation
-2. Check .claude/NORTH_STAR.md for current sprint goal  
+2. Check .claude/NORTH_STAR.md for current sprint goal
 3. Read .claude/session/current.md for where we left off
 4. Read .claude/session/handoff.md for any important notes
 5. Continue from exactly where we stopped
@@ -799,7 +829,7 @@ Epic update needed. Please:
 7. Update dependencies if architecture changed
 ```
 
-#### Sprint Planning Prompt  
+#### Sprint Planning Prompt
 ```markdown
 Time for sprint planning. Please:
 1. Read .claude/INDEX.md first
@@ -812,6 +842,47 @@ Time for sprint planning. Please:
 ```
 
 ---
+
+## 4. Post-Installation Claude.md Cleanup
+
+## 📋 Post-Installation Claude.md Cleanup Prompt
+
+After successfully installing the Claude Code Memory System and completing the initial analysis, use this prompt to optimize your Claude.md file for ongoing development:
+
+```markdown
+# Post-Installation Claude.md Cleanup
+
+Now that the memory system is fully installed and analyzed, please clean up Claude.md to focus on ongoing development workflow instead of first-time setup.
+
+## CLEANUP INSTRUCTIONS
+
+1. **Remove first-session analysis requirements** - The mandatory analysis checklist is no longer needed
+2. **Remove memory population instructions** - All context files are now populated
+3. **Keep token optimization guidance** - INDEX.md navigation is still critical
+4. **Add streamlined development workflow** - Focus on daily usage patterns
+5. **Preserve essential project rules** - Keep core principles but remove setup-specific content
+
+## TARGET CLAUDE.MD STRUCTURE
+The optimized Claude.md should contain only:
+- Quick INDEX.md navigation reminder
+- Development workflow patterns
+- Memory maintenance guidelines
+- Essential project-specific rules
+- Longterm memory integration notes
+
+## EXPECTED RESULT
+Reduce Claude.md from ~75 lines of setup instructions to ~25-30 lines of development-focused guidance that emphasizes:
+- Starting with INDEX.md for token efficiency
+- Regular memory updates during development
+- Integration with longterm vision files
+- Post-installation workflow patterns
+
+Please create this streamlined version now.
+```
+
+---
+
+## 5. Power User Prompts
 
 ## 🎯 Power User Prompts
 
@@ -890,6 +961,8 @@ Epic [EPIC-NAME] is complete. Please:
 
 ---
 
+## 6. Template Prompts for Common Scenarios
+
 ## 📝 Template Prompts for Common Scenarios
 
 ### Morning Startup
@@ -925,7 +998,32 @@ Performance issue with [FEATURE]. Please:
 5. Document findings in optimizations.md
 ```
 
+### Memory Cleanup
+```markdown
+🧠 Claude Code Memory Maintenance
+
+Goal: Keep memory system clean, current, and token-efficient
+
+Instructions:
+1. Archive resolved issues - Move completed bugs/fixes to brief historical summaries
+2. Update current status - Refresh session state, git branch, active URLs in session/current.md
+3. Clean redundant content - Remove duplicate information across files
+4. Preserve essential patterns - Keep architectural solutions, code snippets, best practices
+5. Focus on active development - Emphasize current priorities over historical details
+
+Key files to maintain:
+- session/current.md - Keep current, remove resolved bug details
+- knowledge/errors.md - Active issues only, summarize resolved ones
+- knowledge/solutions.md - Essential patterns, not step-by-step historical fixes
+
+Maintenance frequency: After major milestones or when memory feels cluttered with historical content
+
+Success criteria: Memory loads faster, focuses on current development needs preserves lessons learned without excessive detail
+```
+
 ---
+
+## 7. Common Mistakes to Avoid
 
 ## ⚠️ Common Mistakes to Avoid
 
@@ -939,28 +1037,13 @@ Performance issue with [FEATURE]. Please:
 ### ✅ DO This Instead:
 ```markdown
 "Check .claude/session/current.md and continue from where we left off"
-"Read .claude/session/log.md and summarize yesterday's work"  
+"Read .claude/session/log.md and summarize yesterday's work"
 "Check .claude/knowledge/errors.md for known issues, then fix the highest priority"
 ```
 
 ---
 
-## 🚀 First-Time Setup Checklist
-
-### For New Projects:
-- [ ] Run installer: `claude-memory "ProjectName"`
-- [ ] Edit `.claude/NORTH_STAR.md` with your sprint goal
-- [ ] Give Claude the "Initial Setup Prompt" above
-- [ ] Let Claude populate the memory system
-
-### For Existing Projects:
-- [ ] Run installer: `claude-memory "ProjectName"`  
-- [ ] Give Claude the "Initial Analysis Prompt" above
-- [ ] Let Claude analyze thoroughly (this may take 5-10 minutes)
-- [ ] Review Claude's analysis and correct if needed
-- [ ] Start regular development with "Resuming Work Prompt"
-
----
+## 8. Pro Tips
 
 ## 💡 Pro Tips
 
@@ -990,32 +1073,9 @@ After initial setup, you can use simple prompts:
 "Memory check, then implement the next feature"
 ```
 
-### Clean up Memory every so often
-After some time, you can use a simple clean up prompt:
-```markdown
-" 🧠 Claude Code Memory Maintenance
-
-  Goal: Keep memory system clean, current, and token-efficient
-
-  Instructions:
-  1. Archive resolved issues - Move completed bugs/fixes to brief historical summaries
-  2. Update current status - Refresh session state, git branch, active URLs in session/current.md       
-  3. Clean redundant content - Remove duplicate information across files
-  4. Preserve essential patterns - Keep architectural solutions, code snippets, best practices
-  5. Focus on active development - Emphasize current priorities over historical details
-
-  Key files to maintain:
-  - session/current.md - Keep current, remove resolved bug details
-  - knowledge/errors.md - Active issues only, summarize resolved ones
-  - knowledge/solutions.md - Essential patterns, not step-by-step historical fixes
-
-  Maintenance frequency: After major milestones or when memory feels cluttered with historical
-  content
-
-  Success criteria: Memory loads faster, focuses on current development needs preserves lessons learned without excessive detail"
-```
-
 ---
+
+## 9. Expected Behavior
 
 ## 📊 Expected Behavior
 
@@ -1030,19 +1090,21 @@ When properly prompted, Claude should:
 
 ---
 
+## 10. Example Full Session
+
 ## 🎬 Example Full Session
 
 ### Developer's Prompts Throughout a Day:
 
 **9:00 AM:**
 ```markdown
-Good morning! Check .claude/INDEX.md, then NORTH_STAR.md and current.md. 
+Good morning! Check .claude/INDEX.md, then NORTH_STAR.md and current.md.
 Continue from where we left off yesterday.
 ```
 
 **10:30 AM:**
 ```markdown
-Getting a TypeError. Check knowledge/errors.md for similar issues, 
+Getting a TypeError. Check knowledge/errors.md for similar issues,
 then fix it and document the solution.
 ```
 
@@ -1059,3 +1121,30 @@ handoff.md with tomorrow's tasks, and current.md with stopping point.
 ```
 
 This structured approach ensures Claude uses the memory system efficiently and maintains perfect continuity across all sessions!
+
+---
+
+## 🔗 Quick Navigation Links
+
+### Most Used Prompts:
+- [First-Time Setup Checklist](#1-first-time-setup-checklist) - Quick setup verification
+- [New Project Complete Setup](#2-initial-setup-instructions-for-new-projects) - For starting fresh
+- [Existing Project Analysis](#3-initial-setup-instructions-for-existing-projects) - For existing codebases
+- [Morning Startup Template](#morning-startup) - Daily session start
+- [Token-Efficient Development](#efficient-token-saving-prompt) - Save tokens
+- [Memory Cleanup](#memory-cleanup) - Maintenance
+
+### Critical First Steps:
+- [Setup Checklist](#1-first-time-setup-checklist)
+- [New Projects Checklist](#for-new-projects)
+- [Existing Projects Checklist](#for-existing-projects)
+- [Post-Installation Cleanup](#4-post-installation-claudemd-cleanup)
+
+### Troubleshooting:
+- [Common Mistakes](#7-common-mistakes-to-avoid)
+- [Expected Behavior](#9-expected-behavior)
+- [Pro Tips](#8-pro-tips)
+
+---
+
+*This guide uses GitHub-friendly anchor links and formatting for easy copy/paste workflows. The reorganized structure prioritizes setup instructions first, followed by advanced usage patterns.*

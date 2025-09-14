@@ -19,7 +19,7 @@ curl -sSL https://raw.githubusercontent.com/eschwa3/claude-code-memory-system/ma
 ```
 *This quick check ensures your system has all required tools before installation.*
 
-> **📋 NEXT STEP AFTER INSTALL**: You MUST use the setup prompts in [`Claude Code Memory Prompting Guide.md`](Claude%20Code%20Memory%20Prompting%20Guide.md) to properly initialize your project - this is critical for the memory system to work correctly!
+> **📋 NEXT STEP AFTER INSTALL**: You MUST use the setup prompts in [`Claude Code Memory Prompting Guide.md`](Claude_Code_Memory_Prompting_Guide.md) to properly initialize your project - this is critical for the memory system to work correctly!
 
 ### Alternative Install Methods
 <details>
