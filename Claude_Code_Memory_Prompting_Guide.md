@@ -79,6 +79,7 @@ Copy and paste this entire prompt to Claude Code after installing the memory sys
 
 ---
 
+```markdown
 I've installed the Claude Code Memory System in this project. Before starting development, you MUST complete a full discovery of what already exists and properly set up the project structure.
 
 ## 📋 MANDATORY DISCOVERY AND SETUP CHECKLIST
@@ -435,6 +436,7 @@ Only after ALL above steps are complete, proceed with actual feature development
 4. The agents configured in `tools/agent-usage.md`
 
 Begin the complete discovery and setup process now. Take your time to be thorough - a proper setup saves days of work later.
+```
 
 ### Best Practices for New Projects
 
